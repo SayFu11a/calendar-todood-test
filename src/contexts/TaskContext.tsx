@@ -1,4 +1,3 @@
-// src/contexts/TaskContext.tsx
 import React, { createContext, useState, ReactNode, useContext } from 'react';
 import { useProfile } from './ProfileContext';
 

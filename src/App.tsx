@@ -1,4 +1,3 @@
-// src/App.tsx
 import React from 'react';
 import Calendar from './components/Calendar';
 import { TaskProvider } from './contexts/TaskContext';

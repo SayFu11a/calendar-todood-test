@@ -1,4 +1,3 @@
-// src/utils/api.ts
-export {}; // Add this line to make it a module
+export {}; 
 
-// Your other code here
+

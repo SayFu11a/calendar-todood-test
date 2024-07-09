@@ -1,4 +1,3 @@
-// src/components/Calendar.tsx
 import React, { useState } from 'react';
 import Day from './Day';
 import Header from './Header';

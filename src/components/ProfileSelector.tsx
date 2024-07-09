@@ -1,4 +1,3 @@
-// src/components/ProfileSelector.tsx
 import React, { useState } from 'react';
 import { useProfile } from '../contexts/ProfileContext';
 import './ProfileSelector.css';
