@@ -1,0 +1,114 @@
+/* src/styles/App.css */
+body {
+   font-family: Arial, sans-serif;
+ }
+ 
+ .App {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+ }
+ 
+ .calendar {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ 
+ .header {
+   display: flex;
+   align-items: center;
+   margin-bottom: 10px;
+ }
+ 
+ .header button {
+   background-color: #007bff;
+   color: white;
+   border: none;
+   padding: 10px;
+   cursor: pointer;
+ }
+ 
+ .header button:disabled {
+   background-color: #cccccc;
+ }
+ 
+ .header select,
+ .header input {
+   margin: 0 10px;
+   padding: 10px;
+   font-size: 16px;
+ }
+ 
+ .header select {
+   border: 1px solid #ccc;
+ }
+ 
+ .header input {
+   width: 80px;
+   text-align: center;
+   border: 1px solid #ccc;
+ }
+ 
+ .days {
+   display: grid;
+   grid-template-columns: repeat(7, 1fr);
+   gap: 10px;
+ }
+ 
+ .day {
+   padding: 20px;
+   border: 1px solid #ccc;
+   text-align: center;
+   cursor: pointer;
+   background-color: #f9f9f9;
+   transition: background-color 0.3s;
+ }
+ 
+ .day:hover {
+   background-color: #e9e9e9;
+ }
+ 
+ .holiday {
+   background-color: #ffe0e0;
+ }
+ 
+ .modal {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background: white;
+   padding: 20px;
+   border: 1px solid #ccc;
+   z-index: 1000;
+   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+ }
+ 
+ .task {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+ 
+ .task input[type="checkbox"] {
+   margin-right: 10px;
+ }
+ 
+ button {
+   background-color: #007bff;
+   color: white;
+   border: none;
+   padding: 10px;
+   cursor: pointer;
+ }
+ 
+ button:hover {
+   background-color: #0056b3;
+ }
+ 
+ button:disabled {
+   background-color: #cccccc;
+ }
+ 
