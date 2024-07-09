@@ -1,6 +1,7 @@
 // src/components/ProfileSelector.tsx
 import React, { useState } from 'react';
 import { useProfile } from '../contexts/ProfileContext';
+import './ProfileSelector.css';
 
 const ProfileSelector: React.FC = () => {
   const { profiles, currentProfile, setCurrentProfile, addProfile } = useProfile();
@@ -18,6 +19,7 @@ const ProfileSelector: React.FC = () => {
       <select
         value={currentProfile ? currentProfile.id : ''}
         onChange={(e) => setCurrentProfile(profiles.find(p => p.id === Number(e.target.value))!)}
+        className="profile-select"
       >
         {profiles.map((profile) => (
           <option key={profile.id} value={profile.id}>
@@ -30,8 +32,9 @@ const ProfileSelector: React.FC = () => {
         value={newProfileName}
         onChange={(e) => setNewProfileName(e.target.value)}
         placeholder="New Profile"
+        className="new-profile-input"
       />
-      <button onClick={handleAddProfile}>Add Profile</button>
+      <button onClick={handleAddProfile} className="add-profile-button">Add Profile</button>
     </div>
   );
 };
